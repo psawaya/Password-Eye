@@ -1,0 +1,20 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title> Testing form posts </title>
+<script>
+function bar2() {
+document.getElementById("foo").action="http://cisforcookie.org";
+}
+</script>
+</head>
+<body>
+<p> Do http form posts via javascript give a security warning? </p>
+
+<form id="foo" onsubmit="" action="https://people.mozilla.com/~tvyas/javascript_post_https.html" method="get">
+<label>Username:</label>
+<input placeholder="Enter your username" name="Username" type="text">
+<label>Password:</label>
+<input placeholder="Enter your password" id="pw" name="Password" required="" type="password"><br/>
+<input placeholder="Enter *another* password" id="pw2" name="Password" required="" type="password">
+<input value="Submit" type="submit">
+</form>
